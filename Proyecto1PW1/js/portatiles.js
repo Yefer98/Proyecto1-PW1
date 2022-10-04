@@ -1,0 +1,31 @@
+const venderP = document.getElementById('venderP');
+
+venderP.addEventListener('click', ()=>{
+    const content_card = document.getElementById('content_card');
+    const marcaP = document.getElementById('marcaP');
+    const referenciaP = document.getElementById('referenciaP');
+    const precio = document.getElementById('precio');
+    const ram = document.getElementById('ram');
+    const procesador = document.getElementById('procesador');
+    const discoDuro = document.getElementById('discoDuro');
+    const card = document.createElement('section');
+    const img = document.createElement('img');
+    const text1 = document.createElement('h3');
+    const text2 = document.createElement('p');
+    const text3 = document.createElement('p');
+    const text4 = document.createElement('p');
+    const text5 = document.createElement('p');
+    const text6 = document.createElement('p');
+    card.classList.add('card');
+    img.classList.add('img');
+    const numeroRandom = Math.floor(Math.random() * (10 - 1 + 1) + 1);
+    img.src=`../img/imgPortatiles/${numeroRandom}.jpg`;
+    text1.textContent = "marca: "+marcaP.value;
+    text2.textContent = "referencia: "+referenciaP.value;
+    text3.textContent = "precio: "+precio.value;
+    text4.textContent = "ram: "+ram.value;
+    text5.textContent = "procesador: "+procesador.value;
+    text6.textContent = "disco duro: "+discoDuro.value;
+    card.append(img,text1,text2,text3,text4,text5,text6);
+    content_card.append(card);
+});

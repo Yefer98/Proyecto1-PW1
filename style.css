@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
 }
 
@@ -201,7 +202,7 @@ body{
 }
 
 .card{
-    background-color: rgb(110, 110, 110);
+    background-color: #DDDDDD;
     font-size: clamp(12px, 3vw, 20px);
     max-width: 200px;
     border-radius: 10px;
@@ -211,12 +212,12 @@ body{
     align-items: center;
     justify-content: center;
     gap: 10px;
-    box-shadow: 2px 2px 0px black;
+    box-shadow: 3px 3px 0px black;
 }
 
 .img{
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    border: 2px solid black;
+    box-shadow: 3px 3px 0px grey;
 }
